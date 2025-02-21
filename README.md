@@ -1,22 +1,17 @@
-# Internal Code Name
-**Target:** `AB.0XY.00Z`
+# Project Green
+**Target:** `GR.0XY.00Z`
 
 ## Revisions
 
 | Revision Date | Document Version | Description                 | Tracking Notes | Approved By                |
 |--------------|----------------|-----------------------------|---------------|----------------------------|
-| 2025-02-01  | v1.0.0         | First document version      | KW.010.001   | Dela Cruz, Juan *Design Lead* |
-| 2025-02-18  | v1.0.1         | Fix popup title string      | ITR #0001    | Santos, Maria *Lead Developer* |
-| 2025-02-22  | v1.0.2         | Add network information     | CON-0021     | Dela Cruz, Juan *Design Lead* |
-| ...          | ...            | ...                         | ...           | ...                         |
+
 
 ## Site Map
 
 <details>
-  <summary>Homepage</summary>
-
-  ## Homepage
-  Content for Homepage section...
+  <summary>Login</summary>
+    
 </details>
 
 <details>
