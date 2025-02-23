@@ -35,7 +35,7 @@ Access is granted for the user that has accepted credential inputs.
 
 ## Site Map
 
-- [Revisions](windows/README.md)
+- [Revisions](README.md)
 
 - [Login](docs/login.md)
 
