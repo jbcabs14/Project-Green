@@ -35,7 +35,7 @@ Access is granted for the user that has accepted credential inputs.
 
 ## Site Map
 
-- [Revisions](README.md)
+- [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
 - [Login](docs/login.md)
 
