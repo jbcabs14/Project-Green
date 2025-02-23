@@ -11,29 +11,29 @@
 
 - [Login](docs/Login.md)
 
-  * [Sign up]
+  * [Sign up](docs/sign-up.md)
 
-    * [Verification]
+    * [Verification](docs/verification.md)
 
-- [Homepage]
+- [Homepage](docs/homepage.md)
 
-- [Add Activity]
+- [Add Activity](docs/add-activity.md)
 
-   * [Confirm dialog]
+   * [Confirm dialog](docs/confirm-dialog.md)
 
-- [Committed Acitivites]
+- [Committed Acitivites](docs/committed-activities.md)
 
-  * [Activity Room]
+  * [Activity Room](docs/activity-room.md)
  
-    * [Activity Chat]
+    * [Activity Chat](docs/activity-chat.md)
 
-- [Search Activity]
+- [Search Activity](docs/search-activity.md)
 
-- [User Profile]
+- [User Profile](docs/user-profile.md)
 
-  * [Edit profile]
+  * [Edit profile](docs/edit-profile.md)
  
-  * [Log out]
+  * [Log out](docs/log-out.md)
   
 
 
