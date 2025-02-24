@@ -3,7 +3,7 @@
 
 
 ## Description
-
+The **Search Activity** feature allows the users to search for a specific activity regardless of the users interest details.
 
 
 
