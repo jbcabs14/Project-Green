@@ -1,9 +1,9 @@
-# Login Page Mock-Up
+# Sign in Page Mock-Up
 ![asdasd](https://github.com/your-repo/assets/image.png)
 
 
 ## Description
-The **Login Page** features a simple user-interface that has the availability for a mobile number input. The user may opt to sign in with third-party authenticators such as **Google**.
+The **Sign in Page** features a simple user-interface that has the availability for a mobile number input. The user may opt to sign in with third-party authenticators such as **Google**.
 
 
 
