@@ -11,28 +11,28 @@
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](docs/login.md)
+- [Login](login.md)
 
-  * [Sign up](docs/sign-up.md)
+  * [Sign up](sign-up.md)
 
-    * [Verification](docs/verification.md)
+    * [Verification](verification.md)
 
-- [Homepage](docs/homepage.md)
+- [Homepage](homepage.md)
 
-- [Add Activity](docs/add-activity.md)
+- [Add Activity](add-activity.md)
 
-   * [Confirm dialog](docs/confirm-dialog.md)
+   * [Confirm dialog](confirm-dialog.md)
 
-- [Committed Acitivites](docs/committed-activities.md)
+- [Committed Acitivites](committed-activities.md)
 
-  * [Activity Room](docs/activity-room.md)
+  * [Activity Room](activity-room.md)
  
-    * [Activity Chat](docs/activity-chat.md)
+    * [Activity Chat](activity-chat.md)
 
-- [Search Activity](docs/search-activity.md)
+- [Search Activity](search-activity.md)
 
-- [User Profile](docs/user-profile.md)
+- [User Profile](user-profile.md)
 
-  * [Edit profile](docs/edit-profile.md)
+  * [Edit profile](edit-profile.md)
  
-  * [Log out](docs/log-out.md)
+  * [Log out](log-out.md)
