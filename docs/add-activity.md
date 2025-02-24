@@ -11,7 +11,7 @@ The **Add Activity Dialog** is a feature that lets the users add a movement or e
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](sign-in.md)
+- [Sign in](sign-in.md)
 
   * [Sign up](sign-up.md)
 
