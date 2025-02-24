@@ -11,7 +11,7 @@ The **Verification Dialog** pops up after the user who want's to sign up to the 
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](login.md)
+- [Sign in](sign-in.md)
 
   * [Sign up](sign-up.md)
 
