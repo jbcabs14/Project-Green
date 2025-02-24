@@ -3,7 +3,7 @@
 
 
 ## Description
-The **Login Page** features a simple user-interface that has both availability for email input and mobile number input. The user may opt to sign in with third-party authenticators such as **Google**.
+The **Login Page** features a simple user-interface that has the availability for a mobile number input. The user may opt to sign in with third-party authenticators such as **Google**.
 
 
 
