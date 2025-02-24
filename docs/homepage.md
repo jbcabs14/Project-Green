@@ -3,7 +3,7 @@
 
 
 ## Description
-
+The **Homepage** allows the users to view the suggested and new activities/movements based on their user preferences. The homepage also contains the banner of events, **User Profile**, **Committed Activites**, and **Search Activities** icons.
 
 
 
