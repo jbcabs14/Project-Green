@@ -11,7 +11,7 @@ The **Sign in Page** features a simple user-interface that has the availability 
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](login.md)
+- [Login](sign-in.md)
 
   * [Sign up](sign-up.md)
 
