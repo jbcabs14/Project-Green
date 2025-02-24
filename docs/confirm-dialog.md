@@ -11,7 +11,7 @@ The **Confirm Dialog** pops up after the host presses the "Done" button in addin
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](login.md)
+- [Login](sign-in.md)
 
   * [Sign up](sign-up.md)
 
