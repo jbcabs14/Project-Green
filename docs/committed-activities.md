@@ -11,7 +11,7 @@ The **Committed Activity Page** lets the users view the activities/events they h
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](sign-in.md)
+- [Sign in](sign-in.md)
 
   * [Sign up](sign-up.md)
 
