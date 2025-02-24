@@ -3,7 +3,7 @@
 
 
 ## Description
-
+The **Edit Profile** feature allows the user to edit the user details.
 
 
 
