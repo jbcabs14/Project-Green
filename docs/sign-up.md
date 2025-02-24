@@ -11,7 +11,7 @@ The **Sign up** allows the users to integrate to a third party account like **Go
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](login.md)
+- [Login](sign-in.md)
 
   * [Sign up](sign-up.md)
 
