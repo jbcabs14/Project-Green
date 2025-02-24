@@ -11,7 +11,7 @@ The **User Profile** allows the users to view their details. They will also see 
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](sign-in.md)
+- [Sign in](sign-in.md)
 
   * [Sign up](sign-up.md)
 
