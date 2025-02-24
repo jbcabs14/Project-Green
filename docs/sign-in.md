@@ -1,5 +1,5 @@
 # Sign in Page Mock-Up
-![asdasd](https://github.com/your-repo/assets/image.png)
+![Sign in](sign-in.png)
 
 
 ## Description
