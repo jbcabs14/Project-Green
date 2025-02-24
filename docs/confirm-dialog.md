@@ -3,7 +3,7 @@
 
 
 ## Description
-
+The **Confirm Dialog** pops up after the host presses the "Done" button in adding the activity.
 
 
 
