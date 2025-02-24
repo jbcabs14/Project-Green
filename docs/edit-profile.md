@@ -11,7 +11,7 @@ The **Edit Profile** feature allows the user to edit the user details.
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](login.md)
+- [Login](sign-in.md)
 
   * [Sign up](sign-up.md)
 
