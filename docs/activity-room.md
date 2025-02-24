@@ -11,7 +11,7 @@ The **Activity Room Page** allows the participants see the details and possible 
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](login.md)
+- [Login](sign-in.md)
 
   * [Sign up](sign-up.md)
 
