@@ -1,9 +1,9 @@
-# Log out Page Mock-Up
+# Log out Dialog Mock-Up
 
 
 
 ## Description
-
+The **Log out Dialog** appears if the user opts to log out in the application.
 
 
 
