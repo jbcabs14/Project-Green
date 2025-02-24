@@ -11,7 +11,7 @@ The **Activity Chat Dialog** offers the feature where participants of a certain 
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](login.md)
+- [Login](sign-in.md)
 
   * [Sign up](sign-up.md)
 
