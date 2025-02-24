@@ -1,5 +1,5 @@
 # Sign up Page Mock-Up
-
+![sign-up](https://github.com/jbcabs14/Hiraya/blob/main/img/sign-up.png)
 
 
 ## Description
