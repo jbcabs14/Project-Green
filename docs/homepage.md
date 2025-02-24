@@ -11,7 +11,7 @@ The **Homepage** allows the users to view the suggested and new activities/movem
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](sign-in.md)
+- [Sign in](sign-in.md)
 
   * [Sign up](sign-up.md)
 
