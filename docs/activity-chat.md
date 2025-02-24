@@ -1,9 +1,9 @@
-# Activity Chat Page Mock-Up
+# Activity Chat Dialog Mock-Up
 
 
 
 ## Description
-
+The **Activity Chat Dialog** offers the feature where participants of a certain event or movements can communicate and update of the cetain event.
 
 
 
