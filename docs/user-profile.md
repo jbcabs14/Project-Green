@@ -3,7 +3,7 @@
 
 
 ## Description
-
+The **User Profile** allows the users to view their details. They will also see the log-out button where they can choose to log out to the application or not.
 
 
 
