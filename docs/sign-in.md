@@ -1,5 +1,5 @@
 # Sign in Page Mock-Up
-![Sign in](sign-in.png)
+![sign-in.png](https://github.com/jbcabs14/Hiraya/blob/main/img/sign-in.png))
 
 
 ## Description
