@@ -11,7 +11,7 @@ The **Search Activity** feature allows the users to search for a specific activi
 
 - [Revisions](https://github.com/jbcabs14/Hiraya/blob/main/README.md)
 
-- [Login](sign-in.md)
+- [Sign in](sign-in.md)
 
   * [Sign up](sign-up.md)
 
