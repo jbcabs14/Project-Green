@@ -3,7 +3,7 @@
 
 
 ## Description
-
+The **Activity Room Page** allows the participants see the details and possible updates of the movement. It displays the description and other important details regarding the event or movement.
 
 
 
