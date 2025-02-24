@@ -3,7 +3,7 @@
 
 
 ## Description
-
+The **Sign up** allows the users to integrate to a third party account like **Google** and they can also choose to sign-up using their mobile phone number, which will send a verification code.
 
 
 
