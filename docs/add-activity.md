@@ -1,9 +1,9 @@
-# Add Activity Page Mock-Up
+# Add Activity Dialog Mock-Up
 
 
 
 ## Description
-
+The **Add Activity Dialog** is a feature that lets the users add a movement or event. In this dialog, the user will have to input the description, time, date and other important details of the agenda.
 
 
 
