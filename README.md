@@ -9,7 +9,7 @@
 
 ## Site Map
 
-- [Login](docs/login.md)
+- [Sign-in](docs/sign-in.md)
 
   * [Sign up](docs/sign-up.md)
 
