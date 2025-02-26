@@ -1,5 +1,5 @@
 # Project Green
-**Target:** `GR.0XY.00Z`
+**Target:** `GR.001.001`
 
 ## Revisions
 
