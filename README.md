@@ -1,16 +1,42 @@
-# proj_hiraya
+# Project Green
+**Target:** `GR.001.001`
 
-A new Flutter project.
+## Revisions
 
-## Getting Started
+| Revision Date | Document Version | Description                 | Tracking Notes | Approved By                |
+|--------------|----------------|-----------------------------|---------------|----------------------------|
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Site Map
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Sign-in](docs/sign-in.md)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  * [Sign up](docs/sign-up.md)
+
+    * [Verification](docs/verification.md)
+
+- [Homepage](docs/homepage.md)
+
+- [Add Activity](docs/add-activity.md)
+
+   * [Confirm dialog](docs/confirm-dialog.md)
+
+- [Committed Acitivites](docs/committed-activities.md)
+
+  * [Activity Room](docs/activity-room.md)
+ 
+    * [Activity Chat](docs/activity-chat.md)
+
+- [Search Activity](docs/search-activity.md)
+
+- [User Profile](docs/user-profile.md)
+
+  * [Edit profile](docs/edit-profile.md)
+ 
+  * [Log out](docs/log-out.md)
+  
+
+
+---
+
+© 2025 *Business Name*
