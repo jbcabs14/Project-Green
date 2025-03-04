@@ -9,9 +9,7 @@ The **Homepage** allows the users to view the suggested and new activities/movem
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | User, System                                                                           |
 | **Preconditions** | User is logged in and navigates to the homepage.                                      |
-| **Basic Flow**  | 1. User navigates to the homepage.                                                      |
-|                 | 2. System displays suggested and new activities based on user preferences.              |
-|                 | 3. User can click on any activity to view more details.                                 |
+| **Basic Flow**  | 1. User navigates to the homepage.<br> 2. System displays suggested and new activities based on user preferences.<br> 3. User can click on any activity to view more details.                                 |
 | **Alternative Flow** | - If the user is not logged in, they are prompted to log in.                      |
 | **Postconditions** | User views the homepage with suggested and new activities.                           |
 
