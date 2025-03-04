@@ -10,8 +10,7 @@ The **Search Activity** feature allows the users to search for a specific activi
 | **Actors**      | User, System                                                                           |
 | **Preconditions** | User is on the homepage and clicks the "Search" button.                               |
 | **Basic Flow**  | 1. User clicks on the "Search" button.<br> 2. System displays the search input field.<br> 3. User enters keywords related to the activity they are looking for.<br> 4. System processes the input and displays a list of matching activities.<br> 5. User selects an activity from the list.<br> 6. System redirects the user to the activity details page.                              |
-| **Alternative Flow** | - If no matching activities are found, the system displays a "No results found" message. |
-|                     | - If the user cancels the search, they are redirected back to the homepage.         |
+| **Alternative Flow** | - If no matching activities are found, the system displays a "No results found" message.<br> - If the user cancels the search, they are redirected back to the homepage.         |
 | **Postconditions** | User is redirected to the selected activity's details page.                          |
 
 ## Site Map
