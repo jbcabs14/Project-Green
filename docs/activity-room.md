@@ -9,9 +9,7 @@ The **Activity Room Page** allows the participants see the details and possible 
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | User, System                                                                           |
 | **Preconditions** | User is logged in and navigates to the activity room page.                            |
-| **Basic Flow**  | 1. User navigates to the activity room page.                                            |
-|                 | 2. System displays the details and updates of the activity.                             |
-|                 | 3. User can view the description and other important details.                           |
+| **Basic Flow**  | 1. User navigates to the activity room page.<br> 2. System displays the details and updates of the activity.<br> 3. User can view the description and other important details.                           |
 | **Alternative Flow** | - If the user is not logged in, they are prompted to log in.                      |
 | **Postconditions** | User views the details and updates of the activity.                                  |
 
