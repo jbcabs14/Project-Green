@@ -10,14 +10,7 @@ The **Sign in Page** features a simple user-interface that has the availability 
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | User, System, Google Authentication                                                    |
 | **Preconditions** | User is on the homepage and clicks the "Login" button in the navbar.                  |
-| **Basic Flow**  | 1. User clicks on the "Login with Google" button.                                       |
-|                 | 2. System redirects the user to Google's authentication page.                          |
-|                 | 3. User selects or enters their Google account credentials.                            |
-|                 | 4. Google verifies the credentials and redirects back to the system.                   |
-|                 | 5. System checks if the user is new or existing:                                        |
-|                 |    - If new, the system creates an account and asks for Terms of Service & Privacy Policy agreement. |
-|                 |    - If existing, the user is logged in.                                                |
-|                 | 6. User is redirected to their dashboard or previous page.                              |
+| **Basic Flow**  | 1. User clicks on the "Login with Google" button.<br>2. System redirects the user to Google's authentication page.<br>3. User selects or enters their Google account credentials.<br>4. Google verifies the credentials and redirects back to the system.<br>  - If new, the system creates an account and asks for Terms of Service & Privacy Policy agreement.<br>  - If existing, the user is logged in.<br> 6. User is redirected to their dashboard or previous page.                              |
 | **Alternative Flow** | - If Google authentication fails, the user is shown an error message.             |
 |                     | - If the user cancels the login process, they are redirected back to the login page.|
 | **Postconditions** | User is authenticated and has access to their account.                               |
