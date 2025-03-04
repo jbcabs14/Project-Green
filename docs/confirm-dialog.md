@@ -9,10 +9,7 @@ The **Confirm Dialog** pops up after the host presses the "Done" button in addin
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | Host, System                                                                           |
 | **Preconditions** | Host has filled out the activity details and clicks the "Done" button.                |
-| **Basic Flow**  | 1. Host clicks the "Done" button.                                                       |
-|                 | 2. System displays a confirmation dialog.                                               |
-|                 | 3. Host confirms the addition of the activity.                                          |
-|                 | 4. System saves the activity and displays a success message.                            |
+| **Basic Flow**  | 1. Host clicks the "Done" button.<br> 2. System displays a confirmation dialog.<br> 3. Host confirms the addition of the activity.<br> 4. System saves the activity and displays a success message.                            |
 | **Alternative Flow** | - If the host cancels the confirmation, the activity is not saved.                |
 | **Postconditions** | Activity is added and visible to other users.                                        |
 
