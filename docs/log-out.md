@@ -9,10 +9,7 @@ The **Log out Dialog** appears if the user opts to log out in the application.
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | User, System                                                                           |
 | **Preconditions** | User is logged in and clicks the "Log out" button.                                    |
-| **Basic Flow**  | 1. User clicks on the "Log out" button.                                                 |
-|                 | 2. System displays a confirmation dialog.                                               |
-|                 | 3. User confirms the log out action.                                                    |
-|                 | 4. System logs the user out and redirects them to the homepage.                         |
+| **Basic Flow**  | 1. User clicks on the "Log out" button.<br> 2. System displays a confirmation dialog.<br> 3. User confirms the log out action.<br> 4. System logs the user out and redirects them to the homepage.                         |
 | **Alternative Flow** | - If the user cancels the log out action, they remain logged in.                   |
 | **Postconditions** | User is logged out and redirected to the homepage.                                   |
 
