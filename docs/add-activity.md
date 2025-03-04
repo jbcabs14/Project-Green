@@ -9,11 +9,7 @@ The **Add Activity Dialog** is a feature that lets the users add a movement or e
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | User, System                                                                           |
 | **Preconditions** | User is logged in and navigates to the add activity dialog.                           |
-| **Basic Flow**  | 1. User navigates to the add activity dialog.                                           |
-|                 | 2. System displays the activity input fields.                                           |
-|                 | 3. User fills out the activity details and submits the form.                            |
-|                 | 4. System validates the input and saves the activity.                                   |
-|                 | 5. User is redirected to the committed activities page with the new activity listed.    |
+| **Basic Flow**  | 1. User navigates to the add activity dialog.<br> 2. System displays the activity input fields.<br> 3. User fills out the activity details and submits the form.<br> 4. System validates the input and saves the activity.<br> 5. User is redirected to the committed activities page with the new activity listed.    |
 | **Alternative Flow** | - If the input is invalid, the system displays an error message.                  |
 | **Postconditions** | New activity is added and visible in the committed activities page.                  |
 
