@@ -9,9 +9,7 @@ The **Committed Activity Page** lets the users view the activities/events they h
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | User, System                                                                           |
 | **Preconditions** | User is logged in and navigates to the committed activities page.                     |
-| **Basic Flow**  | 1. User navigates to the committed activities page.                                     |
-|                 | 2. System displays a list of activities the user has committed to.                      |
-|                 | 3. User can click on any activity to view more details.                                 |
+| **Basic Flow**  | 1. User navigates to the committed activities page.<br> 2. System displays a list of activities the user has committed to.<br> 3. User can click on any activity to view more details.                                 |
 | **Alternative Flow** | - If the user is not logged in, they are prompted to log in.                      |
 | **Postconditions** | User views the list of committed activities.                                         |
 
