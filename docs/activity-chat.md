@@ -9,9 +9,7 @@ The **Activity Chat Dialog** offers the feature where participants of a certain 
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | User, System                                                                           |
 | **Preconditions** | User is logged in and navigates to the activity chat dialog.                          |
-| **Basic Flow**  | 1. User navigates to the activity chat dialog.                                          |
-|                 | 2. System displays the chat interface.                                                  |
-|                 | 3. User sends and receives messages related to the activity.                            |
+| **Basic Flow**  | 1. User navigates to the activity chat dialog.<br> 2. System displays the chat interface.<br> 3. User sends and receives messages related to the activity.                            |
 | **Alternative Flow** | - If the user is not logged in, they are prompted to log in.                      |
 | **Postconditions** | User participates in the activity chat.                                              |
 
