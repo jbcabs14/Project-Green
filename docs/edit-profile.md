@@ -9,11 +9,7 @@ The **Edit Profile** feature allows the user to edit the user details.
 |-----------------|----------------------------------------------------------------------------------------|
 | **Actors**      | User, System                                                                           |
 | **Preconditions** | User is logged in and navigates to the edit profile page.                             |
-| **Basic Flow**  | 1. User navigates to the edit profile page.                                             |
-|                 | 2. System displays the current user details in editable fields.                         |
-|                 | 3. User updates their details and submits the form.                                     |
-|                 | 4. System validates the input and updates the user profile.                             |
-|                 | 5. User is redirected to their profile page with updated details.                       |
+| **Basic Flow**  | 1. User navigates to the edit profile page.<br> 2. System displays the current user details in editable fields.<br> 3. User updates their details and submits the form.<br> 4. System validates the input and updates the user profile.<br> 5. User is redirected to their profile page with updated details.                       |
 | **Alternative Flow** | - If the input is invalid, the system displays an error message.                  |
 | **Postconditions** | User profile is updated with the new details.                                        |
 
