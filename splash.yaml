@@ -1,0 +1,12 @@
+
+flutter_native_splash:
+  color: FFFFFF
+  color_dark: 272727
+  image: assets/logos/hiraya-logo.jpeg
+  image_dark: assets/logos/hiraya-logo.jpeg
+  android_12:
+    color: FFFFFF
+    color_dark: 272727
+    image: assets/logos/hiraya-logo.jpeg
+    image_dark: assets/logos/hiraya-logo.jpeg
+  web: false

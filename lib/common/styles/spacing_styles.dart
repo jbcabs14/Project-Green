@@ -1,11 +1,11 @@
+import 'package:proj_hiraya/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import '../../utils/constants/sizes.dart';
 
-class CustomSpacingStyle {
+class MainSpacingStyle {
   static const EdgeInsetsGeometry paddingWithAppBarHeight = EdgeInsets.only(
-    top: CustomSizes.appBarHeight,
-    left: CustomSizes.defaultSpace,
-    bottom: CustomSizes.defaultSpace,
-    right: CustomSizes.defaultSpace,
+    top: MainSizes.appBarHeight,
+    left: MainSizes.defaultSpace,
+    bottom: MainSizes.defaultSpace,
+    right: MainSizes.defaultSpace,
   );
 }

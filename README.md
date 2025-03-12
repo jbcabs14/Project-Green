@@ -1,42 +1,26 @@
 # Project Green
-**Target:** `GR.001.001`
-
-## Revisions
-
-| Revision Date | Document Version | Description                 | Tracking Notes | Approved By                |
-|--------------|----------------|-----------------------------|---------------|----------------------------|
-
-
-## Site Map
-
-- [Sign-in](docs/sign-in.md)
-
-  * [Sign up](docs/sign-up.md)
-
-    * [Verification](docs/verification.md)
-
-- [Homepage](docs/homepage.md)
-
-- [Add Activity](docs/add-activity.md)
-
-   * [Confirm dialog](docs/confirm-dialog.md)
-
-- [Committed Acitivites](docs/committed-activities.md)
-
-  * [Activity Room](docs/activity-room.md)
- 
-    * [Activity Chat](docs/activity-chat.md)
-
-- [Search Activity](docs/search-activity.md)
-
-- [User Profile](docs/user-profile.md)
-
-  * [Edit profile](docs/edit-profile.md)
- 
-  * [Log out](docs/log-out.md)
   
 
+## Internal Release Code  
 
----
+| Internal Release Code | Date Released |
+|----------------------|--------------|
+| GR.010.001          | 2025-mm-dd   |
+| GR.010.002          | 2025-mm-dd   |
+| GR.010.003          | 2025-mm-dd   |
+| ...                 | ...          |
 
-© 2025 *Business Name*
+## GR.010.001 Release Notes _(reverse chronological order)_  
+
+- Add database helper  
+- Refactor ABCD  
+- Fix Bug [#XYZ](#) slow modal transition  
+- Insert all commit messages here...  
+- **NOTES:** XYZ is a known bug ([see report link](#)), a workaround is possible...  
+
+## GR.010.000 Release Notes  
+
+- Insert all commit messages here...  
+
+## Important Links  
+- **Design Specs:** [https://github.com/...](https://github.com/...)  
