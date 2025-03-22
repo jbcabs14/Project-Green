@@ -9,9 +9,9 @@ Future<void> main() async {
   // Todo: Init Local Storage
   // Todo: Await Native Splash
   // Todo: Initialize Firebase
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  ).then((FirebaseApp app) => Get.put(null));
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // ).then((FirebaseApp app) => Get.put(null));
   // Todo: Initialize Authentication
 
   runApp(const Hiraya());
