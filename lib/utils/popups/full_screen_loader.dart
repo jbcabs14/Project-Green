@@ -1,4 +1,4 @@
-//import 'package:proj_hiraya/common/widgets/loaders/animation_loaders.dart';
+import 'package:proj_hiraya/common/widgets/loaders/animation_loaders.dart';
 import 'package:proj_hiraya/utils/constants/colors.dart';
 import 'package:proj_hiraya/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -17,10 +17,10 @@ class MainFullScreenLoader {
               : MainColors.white,
           width: double.infinity,
           height: double.infinity,
-          child: const Column(
+          child: Column(
             children: [
-              SizedBox(height: 250),
-              //MainAnimationLoaderWidget(text: text, animation: animation),
+              const SizedBox(height: 250),
+              MainAnimationLoaderWidget(text: text, animation: animation),
             ],
           ),
         ),

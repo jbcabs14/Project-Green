@@ -8,7 +8,7 @@ class MainBottomSheetTheme {
     backgroundColor: Colors.white,
     modalBackgroundColor: Colors.white,
     constraints: const BoxConstraints(minWidth: double.infinity),
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16))
   );
 
   static BottomSheetThemeData darkBottomSheetTheme = BottomSheetThemeData(
@@ -16,6 +16,6 @@ class MainBottomSheetTheme {
     backgroundColor: Colors.black,
     modalBackgroundColor: Colors.black,
     constraints: const BoxConstraints(minWidth: double.infinity),
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16))
   );
 }

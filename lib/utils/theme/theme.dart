@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:proj_hiraya/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:proj_hiraya/utils/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:proj_hiraya/utils/theme/custom_themes/checkbox_theme.dart';
@@ -7,36 +6,38 @@ import 'package:proj_hiraya/utils/theme/custom_themes/elevated_button_theme.dart
 import 'package:proj_hiraya/utils/theme/custom_themes/outlined_button_theme.dart';
 import 'package:proj_hiraya/utils/theme/custom_themes/text_field_theme.dart';
 import 'package:proj_hiraya/utils/theme/custom_themes/text_theme.dart';
+import 'package:flutter/material.dart';
 
-class AppTheme {
-  AppTheme._();
+class MainAppTheme {
+  MainAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
-    useMaterial3: true,
-    brightness: Brightness.light,
-    primaryColor: Colors.blue,
-    chipTheme: MainChipTheme.lightChipTheme,
-    scaffoldBackgroundColor: Colors.white,
-    appBarTheme: MainAppBarTheme.lightAppBarTheme,
-    checkboxTheme: MainCheckBoxTheme.lightCheckboxTheme,
-    bottomSheetTheme: MainBottomSheetTheme.lightBottomSheetTheme,
-    textTheme: MainTextTheme.lightTextTheme,
-    elevatedButtonTheme: MainElevatedButtonTheme.lightElevatedButtonTheme,
-    outlinedButtonTheme: MainOutlinedButtonTheme.lightOutLinedButtonTheme,
-    inputDecorationTheme: MainTextFormFieldTheme.lightInputDecorationTheme,
-  );
+      useMaterial3: true,
+      fontFamily: 'Poppins',
+      brightness: Brightness.light,
+      primaryColor: const Color(0xFF4DAFFF),
+      textTheme: MainTextTheme.lightTextTheme,
+      chipTheme: MainChipTheme.lightChipTheme,
+      scaffoldBackgroundColor: Colors.white,
+      appBarTheme: MainAppBarTheme.lightAppBarTheme,
+      checkboxTheme: MainCheckboxTheme.lightCheckboxTheme,
+      bottomSheetTheme: MainBottomSheetTheme.lightBottomSheetTheme,
+      elevatedButtonTheme: MainElevatedButtonTheme.lightElevatedButtonTheme,
+      outlinedButtonTheme: MainOutlinedButtonTheme.lightOutlinedButtonTheme,
+      inputDecorationTheme: MainTextFormFieldTheme.lightInputDecorationTheme);
+
   static ThemeData darkTheme = ThemeData(
-    useMaterial3: true,
-    brightness: Brightness.dark,
-    primaryColor: Colors.blue,
-    chipTheme: MainChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Colors.black,
-    appBarTheme: MainAppBarTheme.darkAppBarTheme,
-    checkboxTheme: MainCheckBoxTheme.darkCheckboxTheme,
-    bottomSheetTheme: MainBottomSheetTheme.darkBottomSheetTheme,
-    textTheme: MainTextTheme.darkTextTheme,
-    elevatedButtonTheme: MainElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: MainOutlinedButtonTheme.darkOutLinedButtonTheme,
-    inputDecorationTheme: MainTextFormFieldTheme.darkInputDecorationTheme,
-  );
+      useMaterial3: true,
+      fontFamily: 'Poppins',
+      brightness: Brightness.dark,
+      primaryColor: const Color(0xFF4DAFFF),
+      textTheme: MainTextTheme.darkTextTheme,
+      chipTheme: MainChipTheme.darkChipTheme,
+      scaffoldBackgroundColor: Colors.black,
+      appBarTheme: MainAppBarTheme.darkAppBarTheme,
+      checkboxTheme: MainCheckboxTheme.darkCheckboxTheme,
+      bottomSheetTheme: MainBottomSheetTheme.darkBottomSheetTheme,
+      elevatedButtonTheme: MainElevatedButtonTheme.darkElevatedButtonTheme,
+      outlinedButtonTheme: MainOutlinedButtonTheme.darkOutlinedButtonTheme,
+      inputDecorationTheme: MainTextFormFieldTheme.darkInputDecorationTheme);
 }

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-//import 'package:proj_hiraya/common/widgets/loaders/loaders.dart';
+import 'package:proj_hiraya/common/widgets/loaders/loaders.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -24,7 +24,7 @@ class NetworkManager extends GetxController {
     _connectionStatuses.value = result;
 
     if (result == ConnectivityResult.none) {
-      //MainLoaders.warningSnackbar(title: 'No Internet Connection');
+      MainLoaders.warningSnackbar(title: 'No Internet Connection');
     }
   }
 

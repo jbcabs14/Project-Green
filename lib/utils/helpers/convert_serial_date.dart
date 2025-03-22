@@ -1,3 +1,4 @@
+
 class ConvertSerialDate {
   static DateTime convert(double serialDate) {
     // Convert the serial date to days since the base date
@@ -6,8 +7,7 @@ class ConvertSerialDate {
     final timeFraction = serialDate - daysSinceBaseDate;
 
     final date = baseDate.add(Duration(days: daysSinceBaseDate));
-    final time =
-        Duration(milliseconds: (timeFraction * 24 * 60 * 60 * 1000).toInt());
+    final time = Duration(milliseconds: (timeFraction * 24 * 60 * 60 * 1000).toInt());
 
     return date.add(time);
   }

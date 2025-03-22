@@ -1,10 +1,9 @@
+import 'package:proj_hiraya/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-/// Custom Class for Light & Dark Text Themes
-class MainCheckBoxTheme {
-  MainCheckBoxTheme._();
+class MainCheckboxTheme {
+  MainCheckboxTheme._();
 
-  //customizble Light Text Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith((states) {
@@ -14,16 +13,15 @@ class MainCheckBoxTheme {
         return Colors.black;
       }
     }),
-    fillColor: WidgetStateColor.resolveWith((states) {
+    fillColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.blue;
+        return MainColors.primary;
       } else {
         return Colors.transparent;
       }
     }),
   );
 
-  /// customizable Dark Text Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith((states) {
@@ -33,9 +31,9 @@ class MainCheckBoxTheme {
         return Colors.black;
       }
     }),
-    fillColor: WidgetStateColor.resolveWith((states) {
+    fillColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.blue;
+        return MainColors.primary;
       } else {
         return Colors.transparent;
       }
