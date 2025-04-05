@@ -1,9 +1,9 @@
 class MainImages {
   // App Logos
-  static const String lightAppLogo =
-      "assets/logos/polyphonics-splash-logo-light.png";
-  static const String darkAppLogo =
-      "assets/logos/polyphonics-splash-logo-dark.png";
+  static const String lightAppLogo = "assets/logos/hiraya-logo.jpeg";
+  static const String darkAppLogo = "assets/logos/hiraya-logo.jpeg";
+
+  static const String lightAppLogoSm = "assets/logos/hiraya-logo-sm.png";
 
   // Email Images
 
@@ -19,5 +19,5 @@ class MainImages {
   static const String onboarding3 = "assets/images/onboarding3.png";
 
   // Icons
-  static const String googleLogo = "assets/logos`/google-logo.png";
+  static const String googleLogo = "assets/logos/google-logo.png";
 }

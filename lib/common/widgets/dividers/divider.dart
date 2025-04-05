@@ -6,10 +6,16 @@ import 'package:get/get.dart';
 class MainDivider extends StatelessWidget {
   const MainDivider({
     super.key,
+    this.thickness = 0.8,
+    this.textSpacing = 10.0,
+    this.lineLength = 20.0,
     required this.dividerText,
   });
 
   final String dividerText;
+  final double thickness;
+  final double textSpacing;
+  final double lineLength;
 
   @override
   Widget build(BuildContext context) {
@@ -19,17 +25,17 @@ class MainDivider extends StatelessWidget {
       Flexible(
           child: Divider(
               color: dark ? MainColors.darkGrey : MainColors.grey,
-              thickness: 0.5,
-              indent: 60,
-              endIndent: 5)),
+              thickness: thickness,
+              indent: 100 - lineLength,
+              endIndent: textSpacing)),
       Text(dividerText.capitalize!,
           style: Theme.of(context).textTheme.labelMedium),
       Flexible(
           child: Divider(
               color: dark ? MainColors.darkGrey : MainColors.grey,
-              thickness: 0.5,
-              indent: 5,
-              endIndent: 60)),
+              thickness: thickness,
+              indent: textSpacing,
+              endIndent: 100 - lineLength)),
     ]);
   }
 }

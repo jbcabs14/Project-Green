@@ -1,9 +1,9 @@
 import 'package:proj_hiraya/common/widgets/loaders/loaders.dart';
 import 'package:proj_hiraya/data/repositories/authentication_repo.dart';
-import 'package:proj_hiraya/features/authentication/screens/login.dart';
+import 'package:proj_hiraya/features/authentication/screens/login/login.dart';
 import 'package:proj_hiraya/features/personalization/controllers/user_controller.dart';
 import 'package:proj_hiraya/features/personalization/models/user_model.dart';
-import 'package:proj_hiraya/navigation_menu.dart';
+import 'package:proj_hiraya/main_menu.dart';
 import 'package:proj_hiraya/utils/constants/image_strings.dart';
 import 'package:proj_hiraya/utils/network/network_manager.dart';
 import 'package:proj_hiraya/utils/popups/full_screen_loader.dart';
@@ -28,7 +28,7 @@ class LoginController extends GetxController {
   final userController = Get.put(UserController());
 
   Future<void> login() async {
-    Get.offAll(() => const NavigationMenu());
+    Get.offAll(() => const MainMenu());
   }
 
   Future<void> logout() async {

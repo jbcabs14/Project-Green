@@ -1,5 +1,5 @@
-import 'package:proj_hiraya/features/authentication/screens/login.dart';
-import 'package:proj_hiraya/navigation_menu.dart';
+import 'package:proj_hiraya/features/authentication/screens/login/login.dart';
+import 'package:proj_hiraya/main_menu.dart';
 import 'package:proj_hiraya/utils/exceptions/firebase_auth_exceptions.dart';
 import 'package:proj_hiraya/utils/exceptions/firebase_exceptions.dart';
 import 'package:proj_hiraya/utils/exceptions/format_exceptions.dart';
@@ -31,7 +31,7 @@ class AuthenticationRepository extends GetxController {
     final user = authUser;
 
     if (user != null) {
-      Get.offAll(() => const NavigationMenu());
+      Get.offAll(() => const MainMenu());
     } else {
       Get.offAll(() => const LoginScreen());
     }
@@ -61,7 +61,30 @@ class AuthenticationRepository extends GetxController {
       throw MainPlatformException(e.code).message;
     } catch (e) {
       if (kDebugMode) print('Something went wrong: $e');
-      return null;
+      rethrow;
+    }
+  }
+
+  Future<UserCredential> registerWithEmailAndPassword(
+    String email,
+    String password,
+  ) async {
+    try {
+      final credentials = await auth.createUserWithEmailAndPassword(
+          email: email, password: password);
+
+      return credentials;
+    } on FirebaseAuthException catch (e) {
+      throw MainFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e) {
+      throw MainFirebaseException(e.code).message;
+    } on FormatException catch (e) {
+      throw MainFormatException(e.message);
+    } on PlatformException catch (e) {
+      throw MainPlatformException(e.code).message;
+    } catch (e) {
+      if (kDebugMode) print('Something went wrong: $e');
+      rethrow;
     }
   }
 }

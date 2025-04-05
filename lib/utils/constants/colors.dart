@@ -4,7 +4,7 @@ class MainColors {
   MainColors._();
 
   // App Basic Colors
-  static const Color primary = Color(0xFF4DAFFF);
+  static const Color primary = Color(0xFF8D5325);
   static const Color secondary = Color(0xFFFFF59E);
   static const Color accent = Color(0xFFFFB13D);
 

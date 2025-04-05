@@ -33,7 +33,7 @@ class UserModel {
     String lastName = nameParts.length > 1 ? nameParts[1].toLowerCase() : "";
 
     String camelCaseUsername = "$firstName$lastName";
-    String usernameWithPrefix = "poly_$camelCaseUsername";
+    String usernameWithPrefix = "hiraya_$camelCaseUsername";
     return usernameWithPrefix;
   }
 
