@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:proj_hiraya/common/widgets/tiles/bottom_up_drawer_tile.dart';
-import 'package:proj_hiraya/data/repositories/authentication_repo.dart';
 import 'package:proj_hiraya/features/authentication/controllers/login_controller.dart';
 import 'package:proj_hiraya/features/authentication/screens/login/login.dart';
+import 'package:proj_hiraya/features/personalization/screens/device_settings.dart';
+import 'package:proj_hiraya/features/personalization/screens/personalization.dart';
 
 class MainBottomDrawer extends StatelessWidget {
   const MainBottomDrawer({super.key});
@@ -20,13 +21,13 @@ class MainBottomDrawer extends StatelessWidget {
             icon: Iconsax.user,
             title: 'Profile',
             onTap: () {
-              Navigator.pop(context);
+              Get.to(() => const PersonalizationScreen());
             }),
         MainDrawerTile(
             icon: Iconsax.setting,
             title: 'Settings',
             onTap: () {
-              Navigator.pop(context);
+              Get.to(() => const MainDeviceSettingsPage());
             }),
         MainDrawerTile(
             icon: Iconsax.logout,

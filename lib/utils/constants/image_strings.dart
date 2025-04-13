@@ -2,6 +2,8 @@ class MainImages {
   // App Logos
   static const String lightAppLogo = "assets/logos/hiraya-logo.jpeg";
   static const String darkAppLogo = "assets/logos/hiraya-logo.jpeg";
+  static const String treeLogo = "assets/logos/tree-logo.png";
+  static const String treeLogoBw = "assets/logos/tree-logo-bw.png";
 
   static const String lightAppLogoSm = "assets/logos/hiraya-logo-sm.png";
 
@@ -20,4 +22,5 @@ class MainImages {
 
   // Icons
   static const String googleLogo = "assets/logos/google-logo.png";
+  static const String avatarIcon = "assets/icons/avatar.png";
 }

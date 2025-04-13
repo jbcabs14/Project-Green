@@ -4,7 +4,6 @@ import 'package:proj_hiraya/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MainAppBar(
@@ -40,12 +39,12 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon: Icon(Iconsax.arrow_left,
+                icon: Icon(Icons.arrow_back,
                     color: dark ? MainColors.white : MainColors.black))
             : leadingWidget != null
                 ? IconButton(
                     onPressed: leadingOnPressed,
-                    icon: leadingWidget ?? const Icon(Iconsax.arrow_left))
+                    icon: leadingWidget ?? const Icon(Icons.arrow_back))
                 : leadingIcon != null
                     ? IconButton(
                         onPressed: leadingOnPressed, icon: Icon(leadingIcon))
