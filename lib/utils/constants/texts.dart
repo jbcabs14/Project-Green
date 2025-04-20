@@ -29,6 +29,8 @@ class MainTexts {
   static const String mobileNumber = 'Mobile Number';
   static const String rememberMe = 'Remember Me';
   static const String forgotPassword = 'Forgot Password?';
+  static const String forgotPasswordSubtitle =
+      "Don't worry, sometimes people can forget, too. Enter your email and we will send you a password reset link.";
   static const String optionalAltLoginText = "Or Log In With";
   static const String optionalAltSignupText = "Or Sign up With";
   static const String signIn = 'Log in';

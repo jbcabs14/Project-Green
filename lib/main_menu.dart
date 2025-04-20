@@ -50,13 +50,13 @@ class MainMenu extends StatelessWidget {
             Column(
               // Add 20 cards
               children: List.generate(
-                20,
+                3,
                 (index) => Card(
                   margin: const EdgeInsets.symmetric(
                     vertical: MainSizes.xs,
                   ),
                   elevation: 0,
-                  color: MainColors.white,
+                  color: const Color.fromARGB(255, 200, 187, 187),
                   shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.zero),
                   child: ListTile(

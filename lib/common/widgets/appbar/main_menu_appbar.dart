@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:proj_hiraya/common/widgets/appbar/appbar.dart';
 import 'package:proj_hiraya/common/widgets/drawers/bottom_drawer.dart';
 import 'package:proj_hiraya/common/widgets/loaders/loaders.dart';
+import 'package:proj_hiraya/features/notification/notification.dart';
+import 'package:proj_hiraya/features/search/search_page.dart';
 import 'package:proj_hiraya/utils/constants/image_strings.dart';
 
 class MainMenuAppbar extends StatelessWidget {
@@ -17,11 +20,11 @@ class MainMenuAppbar extends StatelessWidget {
       actions: [
         IconButton(
           icon: const Icon(Iconsax.search_normal),
-          onPressed: () => {},
+          onPressed: () => Get.to(() => const SearchPage()),
         ),
         IconButton(
           icon: const Icon(Iconsax.notification),
-          onPressed: () => {},
+          onPressed: () => Get.to(() => const NotificationPage()),
         ),
         IconButton(
           icon: const Icon(Iconsax.user),

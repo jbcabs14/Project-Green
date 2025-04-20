@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:proj_hiraya/features/authentication/controllers/login_controller.dart';
+import 'package:proj_hiraya/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:proj_hiraya/utils/constants/colors.dart';
 import 'package:proj_hiraya/utils/constants/sizes.dart';
 import 'package:proj_hiraya/utils/constants/texts.dart';
@@ -57,7 +58,8 @@ class MainLoginForm extends StatelessWidget {
 
                     // Forgot Password
                     TextButton(
-                        onPressed: () => {},
+                        onPressed: () =>
+                            Get.to(() => const ForgotPasswordPage()),
                         child: Text(MainTexts.forgotPassword,
                             style: Theme.of(context)
                                 .textTheme
