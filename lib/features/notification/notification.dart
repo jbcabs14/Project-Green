@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:proj_hiraya/common/widgets/appbar/appbar.dart';
 import 'package:proj_hiraya/common/widgets/loaders/loaders.dart';
 

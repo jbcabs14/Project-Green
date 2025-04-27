@@ -6,22 +6,29 @@ import 'package:proj_hiraya/app.dart';
 import 'package:proj_hiraya/data/repositories/authentication_repo.dart';
 import 'package:proj_hiraya/firebase_options.dart';
 import 'package:get/get.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 Future<void> main() async {
-  // Todo: Add Widgets Binding
+  // Add Widgets Binding
   final WidgetsBinding widgetsBinding =
       WidgetsFlutterBinding.ensureInitialized();
 
-  // Todo: Init Local Storage
+  // Init Local Storage
   await GetStorage.init();
 
-  // Todo: Await Native Splash
+  // Await Native Splash
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
-  // Todo: Initialize Firebase
+  // Initialize Firebase
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   ).then((FirebaseApp app) => Get.put(AuthenticationRepository()));
+
+  // Init Supabase
+  await Supabase.initialize(
+      url: 'https://zpdwbxktjqjlzuwqglqy.supabase.co',
+      anonKey:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpwZHdieGt0anFqbHp1d3FnbHF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0MTIxNjMsImV4cCI6MjA2MDk4ODE2M30.z1LbZzoroeAEDI75y9apb5BqTlV9T64EdDsq7obE19k');
 
   // Todo: Initialize Authentication
   runApp(const Hiraya());
