@@ -1,4 +1,6 @@
+import 'package:proj_hiraya/data/repositories/user_repo.dart';
 import 'package:proj_hiraya/features/authentication/screens/login/login.dart';
+import 'package:proj_hiraya/features/personalization/models/user_model.dart';
 import 'package:proj_hiraya/main_menu.dart';
 import 'package:proj_hiraya/utils/exceptions/firebase_auth_exceptions.dart';
 import 'package:proj_hiraya/utils/exceptions/firebase_exceptions.dart';
@@ -34,6 +36,36 @@ class AuthenticationRepository extends GetxController {
       Get.offAll(() => const MainMenu());
     } else {
       Get.offAll(() => const LoginScreen());
+    }
+  }
+
+  Future<UserModel?> loginWithEmailAndPassword(
+      String email, String password) async {
+    try {
+      final userCredential = await auth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+
+      // Safety check
+      final user = userCredential.user;
+      if (user == null) throw 'User not found after login.';
+
+      // Fetch user profile from Firestore or local DB
+      UserRepository userRepository = Get.put(UserRepository());
+      final userModel = await userRepository.fetchUserById(user.uid);
+      return userModel;
+    } on FirebaseAuthException catch (e) {
+      throw MainFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e) {
+      throw MainFirebaseException(e.code).message;
+    } on FormatException catch (e) {
+      throw MainFormatException(e.message);
+    } on PlatformException catch (e) {
+      throw MainPlatformException(e.code).message;
+    } catch (e) {
+      if (kDebugMode) print('Something went wrong during login: $e');
+      rethrow;
     }
   }
 
@@ -74,6 +106,23 @@ class AuthenticationRepository extends GetxController {
           email: email, password: password);
 
       return credentials;
+    } on FirebaseAuthException catch (e) {
+      throw MainFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e) {
+      throw MainFirebaseException(e.code).message;
+    } on FormatException catch (e) {
+      throw MainFormatException(e.message);
+    } on PlatformException catch (e) {
+      throw MainPlatformException(e.code).message;
+    } catch (e) {
+      if (kDebugMode) print('Something went wrong: $e');
+      rethrow;
+    }
+  }
+
+  Future<void> sendEmailVerification() async {
+    try {
+      await auth.currentUser?.sendEmailVerification();
     } on FirebaseAuthException catch (e) {
       throw MainFirebaseAuthException(e.code).message;
     } on FirebaseException catch (e) {

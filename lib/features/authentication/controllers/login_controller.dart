@@ -3,7 +3,6 @@ import 'package:proj_hiraya/data/repositories/authentication_repo.dart';
 import 'package:proj_hiraya/features/authentication/screens/login/login.dart';
 import 'package:proj_hiraya/features/personalization/controllers/user_controller.dart';
 import 'package:proj_hiraya/features/personalization/models/user_model.dart';
-import 'package:proj_hiraya/main_menu.dart';
 import 'package:proj_hiraya/utils/constants/image_strings.dart';
 import 'package:proj_hiraya/utils/network/network_manager.dart';
 import 'package:proj_hiraya/utils/popups/full_screen_loader.dart';
@@ -28,7 +27,53 @@ class LoginController extends GetxController {
   final userController = Get.put(UserController());
 
   Future<void> login() async {
-    Get.offAll(() => const MainMenu());
+    try {
+      MainFullScreenLoader.openLoadingDialog(
+        'Logging you in...',
+        MainImages.loadingIllustration,
+      );
+
+      final isConnected = await NetworkManager.instance.isConnected();
+      if (!isConnected) {
+        MainFullScreenLoader.stopLoading();
+        MainLoaders.errorSnackbar(
+          title: 'Connection Error',
+          message: 'You are not connected to the internet.',
+        );
+        return;
+      }
+
+      // Firebase email/password sign-in
+      final userCredential = await AuthenticationRepository.instance
+          .loginWithEmailAndPassword(username.text.trim(), password.text);
+
+      if (userCredential == null) {
+        MainFullScreenLoader.stopLoading();
+        MainLoaders.errorSnackbar(
+          title: 'Login Failed',
+          message: 'Invalid credentials or user not found.',
+        );
+        return;
+      }
+
+      MainFullScreenLoaderGif.openLoadingDialog(
+        'Success!',
+        'You are now logged in!',
+        MainImages.loginSuccessIllustration,
+      );
+
+      await Future.delayed(const Duration(seconds: 2));
+      MainFullScreenLoader.stopLoading();
+
+      // Redirect to appropriate screen
+      AuthenticationRepository.instance.screenRedirect();
+    } catch (e) {
+      MainFullScreenLoader.stopLoading();
+      MainLoaders.errorSnackbar(
+        title: 'Oh Snap!',
+        message: e.toString(),
+      );
+    }
   }
 
   Future<void> logout() async {

@@ -8,12 +8,15 @@ class MainImages {
   static const String lightAppLogoSm = "assets/logos/hiraya-logo-sm.png";
 
   // Email Images
-
+  static const String deliveredEmailIllustration =
+      "assets/images/delivered-email.png";
+  static const String verifyEmail = 'assets/images/verify-email.png';
   // Animation Images
   static const String loadingIllustration =
       "assets/images/docer-animation.json";
   static const String loginSuccessIllustration =
       "assets/images/login-success-animation.gif";
+  static const String docerAnimation = "assets/images/docer-animation.json";
 
   // Onboarding Images
   static const String onboarding1 = "assets/images/onboarding1.png";

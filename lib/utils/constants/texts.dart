@@ -11,6 +11,7 @@ class MainTexts {
   static const String nickName = 'Nickname';
   static const String gender = 'Gender';
   static const String batch = 'Batch';
+  static const String canContinue = 'Continue';
 
   // -- LOGIN Heading Texts
   static const String loginTitle = 'Hiraya';
@@ -26,6 +27,9 @@ class MainTexts {
   static const String username = 'Username';
   static const String password = 'Password';
   static const String confirmPassword = 'Confirm password';
+  static const String confirmEmail = 'Confirm email';
+  static const String confirmEmailSubtitle =
+      'Please enter the email address you used to register. We will send you a link to reset your password.';
   static const String mobileNumber = 'Mobile Number';
   static const String rememberMe = 'Remember Me';
   static const String forgotPassword = 'Forgot Password?';
@@ -37,10 +41,11 @@ class MainTexts {
   static const String signUp = 'Sign up';
   static const String createMyAccount = 'Create My Account';
   static const String resendEmail = 'Resend Email';
-  static const String resendEmainIn = 'Resend Email in';
+  static const String resendEmailIn = 'Resend Email in';
 
   static const String submit = 'Submit';
   static const String done = 'Done';
+  static const String econtinue = 'Continue';
 
   // -- APPBAR Text
   static const String homeAppbarTitle = 'Hiraya';
@@ -54,4 +59,6 @@ class MainTexts {
 
   // -- FIREBASE Texts
   static const String userDoc = "Users";
+  static const String eventDoc = "Events";
+  static const String eventImages = 'event_images';
 }

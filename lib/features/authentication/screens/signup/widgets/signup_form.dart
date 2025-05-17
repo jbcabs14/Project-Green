@@ -3,22 +3,29 @@ import 'package:iconsax/iconsax.dart';
 import 'package:proj_hiraya/features/authentication/screens/signup/widgets/terms_and_conditions.dart';
 import 'package:proj_hiraya/utils/constants/sizes.dart';
 import 'package:proj_hiraya/utils/constants/texts.dart';
+import 'package:proj_hiraya/features/authentication/controllers/signup_controller.dart';
+import 'package:get/get.dart';
+import 'package:proj_hiraya/utils/validators/validation.dart';
 
 class MainSignupForm extends StatelessWidget {
   const MainSignupForm({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(SignUpController());
     return SingleChildScrollView(
       physics: const NeverScrollableScrollPhysics(),
       child: Form(
+        key: controller.signupFormKey,
         child: Column(
           children: [
             Row(
               children: [
                 Expanded(
                     child: TextFormField(
-                  validator: null,
+                  controller: controller.firstName,
+                  validator: (value) =>
+                      MainValidator.validateEmptyText('First Name', value),
                   expands: false,
                   decoration: const InputDecoration(
                       labelText: MainTexts.firstName,
@@ -27,7 +34,9 @@ class MainSignupForm extends StatelessWidget {
                 const SizedBox(width: MainSizes.inputFieldGap),
                 Expanded(
                     child: TextFormField(
-                  validator: null,
+                  controller: controller.lastName,
+                  validator: (value) =>
+                      MainValidator.validateEmptyText('Last Name', value),
                   expands: false,
                   decoration: const InputDecoration(
                       labelText: MainTexts.lastName,
@@ -40,7 +49,9 @@ class MainSignupForm extends StatelessWidget {
 
             // Username
             TextFormField(
-              validator: null,
+              controller: controller.username,
+              validator: (value) =>
+                  MainValidator.validateEmptyText('Username', value),
               decoration: const InputDecoration(
                   labelText: MainTexts.username,
                   prefixIcon: Icon(Iconsax.user_edit)),
@@ -50,7 +61,9 @@ class MainSignupForm extends StatelessWidget {
 
             // Email
             TextFormField(
-              validator: null,
+              controller: controller.email,
+              validator: (value) =>
+                  MainValidator.validateEmptyText('Email', value),
               decoration: const InputDecoration(
                   labelText: MainTexts.email, prefixIcon: Icon(Iconsax.direct)),
             ),
@@ -59,7 +72,9 @@ class MainSignupForm extends StatelessWidget {
 
             // Phone number
             TextFormField(
-              validator: null,
+              controller: controller.mobileNumber,
+              validator: (value) =>
+                  MainValidator.validateEmptyText('Mobile Number', value),
               decoration: const InputDecoration(
                   labelText: MainTexts.mobileNumber,
                   prefixIcon: Icon(Iconsax.call)),
@@ -68,28 +83,41 @@ class MainSignupForm extends StatelessWidget {
             const SizedBox(height: MainSizes.inputFieldGap),
 
             // Password
-            TextFormField(
-              validator: null,
-              decoration: InputDecoration(
-                  labelText: MainTexts.password,
-                  prefixIcon: const Icon(Iconsax.password_check),
-                  suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Iconsax.eye_slash),
-                  )),
+            Obx(
+              () => TextFormField(
+                validator: (value) =>
+                    MainValidator.validateEmptyText('Password', value),
+                controller: controller.password,
+                obscureText: controller.hidePassword.value,
+                decoration: InputDecoration(
+                    labelText: MainTexts.password,
+                    prefixIcon: const Icon(Iconsax.password_check),
+                    suffixIcon: IconButton(
+                      onPressed: () => controller.hidePassword.value =
+                          !controller.hidePassword.value,
+                      icon: const Icon(Iconsax.eye_slash),
+                    )),
+              ),
             ),
 
             const SizedBox(height: MainSizes.itemGap),
 
-            TextFormField(
-              validator: null,
-              decoration: InputDecoration(
-                  labelText: MainTexts.confirmPassword,
-                  prefixIcon: const Icon(Iconsax.password_check),
-                  suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Iconsax.eye_slash),
-                  )),
+            // Confirm Password
+            Obx(
+              () => TextFormField(
+                validator: (value) =>
+                    MainValidator.validateEmptyText('Confirm Password', value),
+                controller: controller.confirmPassword,
+                obscureText: controller.hideConfirmPassword.value,
+                decoration: InputDecoration(
+                    labelText: MainTexts.confirmPassword,
+                    prefixIcon: const Icon(Iconsax.password_check),
+                    suffixIcon: IconButton(
+                      onPressed: () => controller.hideConfirmPassword.value =
+                          !controller.hideConfirmPassword.value,
+                      icon: const Icon(Iconsax.eye_slash),
+                    )),
+              ),
             ),
 
             const SizedBox(height: MainSizes.sectionGap),
@@ -103,7 +131,7 @@ class MainSignupForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () => {},
+                    onPressed: () => controller.signup(),
                     child: const Text(MainTexts.createMyAccount))),
           ],
         ),

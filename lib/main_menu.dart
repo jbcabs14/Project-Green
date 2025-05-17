@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 import 'package:liquid_pull_refresh/liquid_pull_refresh.dart';
 import 'package:proj_hiraya/common/widgets/appbar/main_menu_appbar.dart';
 import 'package:proj_hiraya/common/widgets/buttons/floating_button.dart';
-import 'package:proj_hiraya/common/widgets/cards/card_post.dart';
+import 'package:proj_hiraya/features/hiraya_events/controllers/cards_list_controller.dart';
+import 'package:proj_hiraya/features/hiraya_events/screens/cards_list.dart';
 import 'package:proj_hiraya/features/hiraya_events/screens/create_event.dart';
 import 'package:proj_hiraya/utils/constants/colors.dart';
 import 'package:proj_hiraya/utils/constants/sizes.dart';
@@ -26,12 +27,13 @@ class MainMenu extends StatelessWidget {
             color: MainColors.primary,
             animSpeedFactor: 3.0,
             onRefresh: () async {
-              return Future<void>.delayed(const Duration(seconds: 3));
+              CardListController controller = Get.put(CardListController());
+              controller.streamEvents();
             },
             child: ListView(
               physics: const AlwaysScrollableScrollPhysics(),
-              children: [
-                const Column(
+              children: const [
+                Column(
                   children: [
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: MainSizes.sm),
@@ -46,25 +48,14 @@ class MainMenu extends StatelessWidget {
                 ),
 
                 // Divider
-                const Divider(
+                Divider(
                   color: MainColors.grey,
                   height: 1,
                   thickness: 1,
                 ),
 
                 // Main Content
-                Column(
-                  children: List.generate(
-                    3,
-                    (index) => MainCardPost(
-                      key: Key('card_post_$index'),
-                      title: 'Title $index',
-                      imageUrl: 'https://picsum.photos/200/300?random=$index',
-                      upvotes: '100',
-                      comments: '50',
-                    ),
-                  ),
-                ),
+                CardsList()
               ],
             ),
           ),

@@ -59,6 +59,19 @@ class UserRepository extends GetxController {
     }
   }
 
+  Future<UserModel> fetchUserById(String userId) async {
+    try {
+      final doc = await db.collection(MainTexts.userDoc).doc(userId).get();
+      if (doc.exists) {
+        return UserModel.fromSnapshot(doc);
+      } else {
+        throw 'User not found';
+      }
+    } catch (e) {
+      rethrow;
+    }
+  }
+
   Future<void> updateUserDetails(UserModel updatedUser) async {
     try {
       await db

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -28,7 +29,11 @@ Future<void> main() async {
   await Supabase.initialize(
       url: 'https://zpdwbxktjqjlzuwqglqy.supabase.co',
       anonKey:
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpwZHdieGt0anFqbHp1d3FnbHF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0MTIxNjMsImV4cCI6MjA2MDk4ODE2M30.z1LbZzoroeAEDI75y9apb5BqTlV9T64EdDsq7obE19k');
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpwZHdieGt0anFqbHp1d3FnbHF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0MTIxNjMsImV4cCI6MjA2MDk4ODE2M30.z1LbZzoroeAEDI75y9apb5BqTlV9T64EdDsq7obE19k',
+      accessToken: () async {
+        final token = await FirebaseAuth.instance.currentUser?.getIdToken();
+        return token;
+      });
 
   // Todo: Initialize Authentication
   runApp(const Hiraya());

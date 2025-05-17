@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:proj_hiraya/features/authentication/controllers/signup_controller.dart';
 import 'package:proj_hiraya/utils/constants/colors.dart';
 import 'package:proj_hiraya/utils/constants/sizes.dart';
 
@@ -7,12 +9,15 @@ class TermsAndConditions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = SignUpController.instance;
     return Row(
       children: [
         SizedBox(
             width: 24,
             height: 24,
-            child: Checkbox(value: false, onChanged: (value) => {})),
+            child: Obx(() => Checkbox(
+                value: controller.privacyPolicy.value,
+                onChanged: (value) => controller.privacyPolicy.toggle()))),
         const SizedBox(width: MainSizes.itemGap),
         Text.rich(TextSpan(children: [
           TextSpan(
